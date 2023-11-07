@@ -82,6 +82,9 @@ export const Story = defineDocumentType(() => ({
       type: "date",
       required: true,
     },
+    headerImg: {
+      type: "string",
+    },
   },
   computedFields: {
     slug: {
