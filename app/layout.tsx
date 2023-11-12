@@ -20,6 +20,9 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <head>
+        <base target="_blank"></base>
+      </head>
       <body
         className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
       >
@@ -32,6 +35,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
                   <Link href="/">Stories</Link>
                   <Link href="/posts">Blog</Link>
                   <Link href="/now">Now</Link>
+                  <Link href="/videos">Videos</Link>
                 </nav>
               </div>
             </header>
