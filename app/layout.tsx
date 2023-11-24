@@ -1,48 +1,41 @@
-import "./globals.css";
+import { type Metadata } from "next";
+import { Analytics } from "@/lib/analytics";
 
-import Link from "next/link";
-import { Inter } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
-import { Analytics } from "@/components/analytics";
-import { ModeToggle } from "@/components/mode-toggle";
+import { Providers } from "@/app/providers";
+import { Layout } from "@/components/Layout";
 
-const inter = Inter({ subsets: ["latin"] });
+import "@/styles/tailwind.css";
 
-export const metadata = {
-  title: "Website of Erik C. Rutledge",
-  description: "Travel stories, blog posts, and other random stuff",
+export const metadata: Metadata = {
+  title: {
+    template: "%s - Spencer Sharp",
+    default:
+      "Erik C. Rutledge - Solution designer, developer, and amateur filmmaker",
+  },
+  description:
+    "I’m Erik, a self-motivated solution designer and developer with a propensity for videography and film. I spent over three years living in Europe while working for a Singapore-based computer vision company. Following that as a Solutions Consultant for an Estonia-based autonomous negotiation software company. I currently travel in a converted mini school bus exploring the US and Mexico.",
+  alternates: {
+    types: {
+      "application/rss+xml": `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
+    },
+  },
 };
 
-interface RootLayoutProps {
+export default function RootLayout({
+  children,
+}: {
   children: React.ReactNode;
-}
-
-export default function RootLayout({ children }: RootLayoutProps) {
+}) {
   return (
-    <html lang="en">
-      <head>
-        <base target="_blank"></base>
-      </head>
-      <body
-        className={`antialiased min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50 ${inter.className}`}
-      >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="max-w-2xl mx-auto py-10 px-4">
-            <header>
-              <div className="flex items-center justify-between">
-                <ModeToggle />
-                <nav className="ml-auto text-sm font-medium space-x-6">
-                  <Link href="/">Stories</Link>
-                  <Link href="/posts">Blog</Link>
-                  <Link href="/now">Now</Link>
-                  <Link href="/videos">Videos</Link>
-                </nav>
-              </div>
-            </header>
-            <main>{children}</main>
+    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+      <body className="flex h-full bg-zinc-50 dark:bg-black">
+        <Providers>
+          <div className="flex w-full">
+            <Layout>{children}</Layout>
           </div>
-          <Analytics />
-        </ThemeProvider>
+        </Providers>
+
+        <Analytics />
       </body>
     </html>
   );
