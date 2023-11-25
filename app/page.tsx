@@ -84,7 +84,7 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<"svg">) {
 
 function Story({ story }: { story: StoryWithSlug }) {
   return (
-    <Card as="story">
+    <Card as="article">
       <Card.Title href={`/stories/${story.slug}`}>{story.title}</Card.Title>
       <Card.Eyebrow as="time" dateTime={story.date} decorate>
         {formatDate(story.date)}

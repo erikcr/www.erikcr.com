@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.17",
+    "@mapbox/rehype-prism": "^0.9.0",
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.0.3",
     "@tailwindcss/typography": "^0.5.10",
     "@vercel/analytics": "^1.1.1",
     "clsx": "^2.0.0",
@@ -21,7 +25,7 @@
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
-    "sharp": "^0.32.6"
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -31,6 +35,9 @@
     "eslint": "^8",
     "eslint-config-next": "13.5.6",
     "postcss": "^8",
+    "prettier": "^3.1.0",
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "sharp": "^0.32.6",
     "tailwindcss": "^3",
     "typescript": "^5"
   }
