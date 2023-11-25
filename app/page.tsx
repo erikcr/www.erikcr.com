@@ -185,35 +185,25 @@ function Role({ role }: { role: Role }) {
 function Resume() {
   let resume: Array<Role> = [
     {
-      company: "Planetaria",
-      title: "CEO",
+      company: "Pactum",
+      title: "Solutions Consultant",
       logo: logoPlanetaria,
-      start: "2019",
-      end: {
-        label: "Present",
-        dateTime: new Date().getFullYear().toString(),
-      },
+      start: "2022",
+      end: "2022",
     },
     {
-      company: "Airbnb",
-      title: "Product Designer",
+      company: "ViSenze",
+      title: "Solutions Consultant",
       logo: logoAirbnb,
-      start: "2014",
-      end: "2019",
+      start: "2021",
+      end: "2022",
     },
     {
-      company: "Facebook",
-      title: "iOS Software Engineer",
+      company: "ViSenze",
+      title: "Solutions Engineer",
       logo: logoFacebook,
-      start: "2011",
-      end: "2014",
-    },
-    {
-      company: "Starbucks",
-      title: "Shift Supervisor",
-      logo: logoStarbucks,
-      start: "2008",
-      end: "2011",
+      start: "2018",
+      end: "2021",
     },
   ];
 
@@ -320,7 +310,7 @@ export default async function Home() {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
+            {/* <Newsletter /> */}
             <Resume />
           </div>
         </div>
