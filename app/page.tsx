@@ -11,10 +11,8 @@ import {
   LinkedInIcon,
   TwitterIcon,
 } from "@/components/SocialIcons";
-import logoAirbnb from "@/public/images/logos/airbnb.svg";
-import logoFacebook from "@/public/images/logos/facebook.svg";
-import logoPlanetaria from "@/public/images/logos/planetaria.svg";
-import logoStarbucks from "@/public/images/logos/starbucks.svg";
+import logoVisenze from "@/public/images/logos/visenze.svg";
+import logoPactum from "@/public/images/logos/pactum.svg";
 import image1 from "@/public/images/photos/image-1.jpg";
 import image2 from "@/public/images/photos/image-2.jpg";
 import image3 from "@/public/images/photos/image-3.jpg";
@@ -187,21 +185,21 @@ function Resume() {
     {
       company: "Pactum",
       title: "Solutions Consultant",
-      logo: logoPlanetaria,
+      logo: logoPactum,
       start: "2022",
       end: "2022",
     },
     {
       company: "ViSenze",
       title: "Solutions Consultant",
-      logo: logoAirbnb,
+      logo: logoVisenze,
       start: "2021",
       end: "2022",
     },
     {
       company: "ViSenze",
       title: "Solutions Engineer",
-      logo: logoFacebook,
+      logo: logoVisenze,
       start: "2018",
       end: "2021",
     },
@@ -294,6 +292,11 @@ export default async function Home() {
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
+            {/* <SocialLink
+              href="https://linkedin.com/in/erikcrutledge"
+              aria-label="Follow on Unsplash"
+              icon={UnsplashIcon}
+            /> */}
           </div>
         </div>
       </Container>

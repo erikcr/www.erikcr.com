@@ -3,11 +3,7 @@ import Image from "next/image";
 
 import { Card } from "@/components/Card";
 import { SimpleLayout } from "@/components/SimpleLayout";
-import logoAnimaginary from "@/public/images/logos/animaginary.svg";
-import logoCosmos from "@/public/images/logos/cosmos.svg";
-import logoHelioStream from "@/public/images/logos/helio-stream.svg";
-import logoOpenShuttle from "@/public/images/logos/open-shuttle.svg";
-import logoPlanetaria from "@/public/images/logos/planetaria.svg";
+import logoBrainyBrawls from "@/public/images/logos/brainybrawls.svg"
 
 const projects = [
   {
@@ -17,7 +13,7 @@ const projects = [
       href: "https://github.com/erikcr/nextjs-trivia-manager",
       label: "github.com",
     },
-    logo: logoPlanetaria,
+    logo: logoBrainyBrawls
   },
 ];
 
