@@ -37,7 +37,7 @@ function Story({ story }: { story: StoryWithSlug }) {
 export const metadata: Metadata = {
   title: 'Stories',
   description:
-    'All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order.',
+    'Stories from my years of world travel.',
 }
 
 export default async function StoriesIndex() {
@@ -45,8 +45,8 @@ export default async function StoriesIndex() {
 
   return (
     <SimpleLayout
-      title="Writing on software design, company building, and the aerospace industry."
-      intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+      title="Stories of my world travels, random mishaps, and many other detours."
+      intro="Narrative essays recounting travels across Europe, the US, and Mexico."
     >
       <div className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40">
         <div className="flex max-w-3xl flex-col space-y-16">

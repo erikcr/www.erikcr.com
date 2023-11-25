@@ -9,6 +9,7 @@
     "preview": "next build && next start",
     "lint": "next lint"
   },
+  "browserslist": "defaults, not ie <= 11",
   "dependencies": {
     "@headlessui/react": "^1.7.17",
     "@mapbox/rehype-prism": "^0.9.0",
@@ -18,10 +19,10 @@
     "@tailwindcss/typography": "^0.5.10",
     "@vercel/analytics": "^1.1.1",
     "clsx": "^2.0.0",
-    "contentlayer": "^0.3.4",
     "date-fns": "^2.30.0",
+    "fast-glob": "^3.3.2",
+    "feed": "^4.2.2",
     "next": "^13.4.1",
-    "next-contentlayer": "^0.3.2",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",

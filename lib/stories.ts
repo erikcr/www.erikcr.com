@@ -3,7 +3,6 @@ import glob from 'fast-glob'
 interface Story {
   title: string
   description: string
-  author: string
   date: string
 }
 
@@ -27,7 +26,7 @@ async function importStory(
 
 export async function getAllStories() {
   let storyFilenames = await glob('*/page.mdx', {
-    cwd: './src/app/stories',
+    cwd: './app/stories',
   })
 
   let stories = await Promise.all(storyFilenames.map(importStory))
