@@ -76,21 +76,22 @@ export default function About() {
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
               I was born and raised in East Tennessee. After I graduated from
-              university, I moved to Ireland without a job, house, and very
+              university, I moved to Ireland without a job or house, and very
               little savings.
             </p>
 
             <p>
               If I wasn&apos;t building tech products or working for tech
-              companies, I spend my extra writing or creating film projects.
-              Personally, I am a fan of the short form projects and serials.
+              companies, I would spend my extra time writing or creating film
+              projects. Personally, I am a fan of the short form projects and
+              serials.
             </p>
 
             <p>
               In the summer of 2021 I bought a mini school bus off Facebook
               Marketplace. After a year and a half of inconsistent building, I
-              completed the construction and started hit the road at the
-              beginning of 2023.
+              completed the construction and hit the road at the beginning of
+              2023.
             </p>
           </div>
         </div>

@@ -13,6 +13,7 @@ import {
 } from "@/components/SocialIcons";
 import logoVisenze from "@/public/images/logos/visenze.svg";
 import logoPactum from "@/public/images/logos/pactum.svg";
+import logoEcr from "@/public/images/logos/ecr.png";
 import image1 from "@/public/images/photos/image-1.jpg";
 import image2 from "@/public/images/photos/image-2.jpg";
 import image3 from "@/public/images/photos/image-3.jpg";
@@ -182,6 +183,13 @@ function Role({ role }: { role: Role }) {
 
 function Resume() {
   let resume: Array<Role> = [
+    {
+      company: "Self-employed",
+      title: "Freelance Consultant",
+      logo: logoEcr,
+      start: "2023",
+      end: "Present",
+    },
     {
       company: "Pactum",
       title: "Solutions Consultant",
